@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Kodimax.Models.Tipo>
+
+<select class="form-control" id="Tipo" name="Tipo">
+
+    @foreach (var item in Model)
+    {
+        <option value="@item.Id">
+            @item.Tipo1
+        </option>
+    }
+</select>

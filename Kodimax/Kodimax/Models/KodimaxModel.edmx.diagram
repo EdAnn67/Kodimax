@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64c8075768d141a4bda78514765b9df4" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="KodimaxModel.Cine" Width="1.5" PointX="6" PointY="1.25" />
+        <EntityTypeShape EntityType="KodimaxModel.Genero" Width="1.5" PointX="3.75" PointY="9.5" />
+        <EntityTypeShape EntityType="KodimaxModel.Golosina" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="KodimaxModel.Nivel" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="KodimaxModel.Pelicula" Width="1.5" PointX="6" PointY="9.125" />
+        <EntityTypeShape EntityType="KodimaxModel.Sala" Width="1.5" PointX="6" PointY="12.625" />
+        <EntityTypeShape EntityType="KodimaxModel.Ticket" Width="1.5" PointX="5.25" PointY="4.5" />
+        <EntityTypeShape EntityType="KodimaxModel.Tipo" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="KodimaxModel.Usuario" Width="1.5" PointX="3" PointY="4.125" />
+        <EntityTypeShape EntityType="KodimaxModel.Boleto" Width="1.5" PointX="8.25" PointY="4.125" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Cine1" />
+        <AssociationConnector Association="KodimaxModel.FK_Pelicula_Genero" />
+        <AssociationConnector Association="KodimaxModel.FK_Golosina_Tipo" />
+        <AssociationConnector Association="KodimaxModel.FK_Ticket_Golosina1" />
+        <AssociationConnector Association="KodimaxModel.FK_Usuario_Nivel" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Pelicula1" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Sala1" />
+        <AssociationConnector Association="KodimaxModel.FK_Ticket_Usuario" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Usuario1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
